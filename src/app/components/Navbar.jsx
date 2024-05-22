@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import GithubIcon from "../../../public/github-icon.svg";
+import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
@@ -51,13 +54,21 @@ const Navbar = () => {
           )}
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 gap-10">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />
               </li>
             ))}
           </ul>
+        </div>
+        <div className="socials flex flex-row gap-2">
+          <Link href="https://github.com/ylwn29">
+            <Image src={GithubIcon} alt="Github Icon" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/yulun-w/">
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
         </div>
       </div>
       {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
