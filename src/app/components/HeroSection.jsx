@@ -33,7 +33,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Master of Science in Computer Science student at Northeastern University
+            Hard work beats talent if talent doesn't work hard.
           </p>
           <div>
             {/* <Link
