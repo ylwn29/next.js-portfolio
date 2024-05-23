@@ -59,8 +59,11 @@ const AboutSection = () => {
         <Image src="/images/about-image.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4 ">About Me</h2>
-          <p className="text-lg lg:text-xl font-serif">
-            I am a MSCS student at Northeastern University. I have experience working with JavaScript, React, Redux, Node.js, Express, MongoDB, HTML, CSS, and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team player and I am excited to work with others to create amazing projects.
+          <p className="text-lg lg:text-xl mb-4">
+            I am a Master of Science in Computer Science student at Northeastern University. I have experience of Web Development, Cloud Computing, Object-Oriented Design. I am passionate about learning new technologies and am currently exploring the use of OpenAI APIs to deliver diverse functionalities.
+          </p>
+          <p className="text-lg lg:text-xl">
+            Meanwhile, I am a team player and am eager to work with others to create innovative projects.
           </p>
           <div className="flex flex-row justify-start mt-8 text-2xl gap-12">
             <TabButton
