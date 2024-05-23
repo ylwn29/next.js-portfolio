@@ -3,7 +3,6 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import TabButton from "./TabButton";
-import Head from 'next/head';
 import LogoGroup from '../components/LogoGroup';
 
 const TAB_DATA = [
@@ -12,15 +11,6 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <LogoGroup />
-
-    
-      // <ul className="list-disc pl-2 text-xl">
-      //   <li>Node.js</li>
-      //   <li>Express</li>
-      //   <li>MongoDB</li>
-      //   <li>JavaScript</li>
-      //   <li>React</li>
-      // </ul>
     ),
   },
   {

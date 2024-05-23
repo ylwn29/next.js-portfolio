@@ -1,4 +1,3 @@
-// components/LogoGroup.js
 import React from 'react';
 
 const logos = [
