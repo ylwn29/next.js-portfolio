@@ -34,7 +34,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Hard work beats talent if talent doesn't work hard.
+            Hard work beats talent if talent doesn&apos;t work hard.
           </p>
           <div>
             {/* <Link
