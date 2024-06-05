@@ -8,13 +8,12 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
-      {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-1/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div> */}
       <div className="bg-hero-pattern bg-cover bg-center min-h-300px w-full sm:bg-left md:bg-center lg:bg-right grid grid-cols-1 sm:grid-cols-12 px-16 py-24 lg:px-24">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-8 place-self-center text-center sm:text-left justify-self-start pl-16 lg:px-24 lg:col-span-6"
+          className="col-span-8 place-self-center text-center sm:text-left justify-self-start lg:px-24 lg:col-span-6"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
