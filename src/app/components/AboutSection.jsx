@@ -18,8 +18,18 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2 text-xl">
-        <li className="pb-2">Northeastern Univeristy - San Jose, CA</li>
-        <li>Rutgers University - Piscataway, NJ</li>
+        <li className="pb-4 hover:font-bold">
+          <Link href="https://siliconvalley.northeastern.edu/">
+            Northeastern Univeristy - San Jose, CA
+          </Link>
+          <div className="pl-4">- Master of Science in Computer Science</div>         
+        </li>
+        <li className="pb-2 hover:font-bold">
+          <Link href="https://www.rutgers.edu/">
+            Rutgers University - Piscataway, NJ
+          </Link>
+          <div className="pl-4">- Master of Financial Analysis</div>          
+        </li>
       </ul>
     ),
   },
@@ -88,7 +98,7 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className="mt-8 font-serif">
+          <div className="mt-8 italic">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
