@@ -149,7 +149,7 @@ const logos = [
 
 const LogoGroup = () => {
   return (
-    <div className="flex flex-wrap p-4 space-x-4">
+    <div className="flex flex-wrap p-2 space-x-4">
       {logos.map((logo) => (
         <div className="group relative" key={logo.alt}>
           <a href={logo.href} target="_blank" rel="noreferrer">
@@ -158,7 +158,7 @@ const LogoGroup = () => {
               alt={logo.alt}
               className="m-2 w-16 h-16 transition-transform duration-300 hover:scale-150"
             />
-            <span className="absolute left-1/2 transform -translate-x-1/2 translate-y-2 w-32 p-2 text-center bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+            <span className="absolute left-1/2 transform -translate-x-1/2 translate-y-2 w-32 p-2 text-center bg-gray-800 text-white text-s rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 font-sans">
               {logo.text}
             </span>
           </a>
