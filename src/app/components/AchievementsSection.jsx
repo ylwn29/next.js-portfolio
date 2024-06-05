@@ -32,7 +32,8 @@ const achievementsList = [
 
 const AchievementsSection = () => {
   return (
-    <div className="py-8 xl:gap-16 sm:py-16 xl:px-16 font-serif">
+    <div className="py-8 xl:gap-16 sm:py-16 xl:px-16 font-serif relative">
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-900 to-transparent rounded-full h-60 w-60 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="sm:border-[#33353F] sm:border rounded-md py-8 px-16 flex flex-col sm:flex-row items-center justify-between">
         {achievementsList.map((achievement, index) => {
           return (
