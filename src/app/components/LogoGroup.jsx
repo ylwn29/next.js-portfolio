@@ -149,9 +149,9 @@ const logos = [
 
 const LogoGroup = () => {
   return (
-    <div className="flex flex-wrap p-2 space-x-4">
+    <div className="flex flex-wrap p-2 space-x-2 bg-gradient-to-b from-pink-200 via-pink-300 to-purple-300 rounded-md">
       {logos.map((logo) => (
-        <div className="group relative" key={logo.alt}>
+        <div className="group relative ml-2" key={logo.alt}>
           <a href={logo.href} target="_blank" rel="noreferrer">
             <img
               src={logo.src}
