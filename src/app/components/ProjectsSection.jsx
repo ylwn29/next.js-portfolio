@@ -16,47 +16,47 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Color Palette Generator",
+    description: "A SPA utilized Flask and Python. It takes users' prompts, pass it over to OpenAI API to get colors back from GPT, then respond with the list of colors.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All", "Web", "AI"],
+    gitUrl: "https://github.com/ylwn29/color_palette_generator",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Full Stack MERN Web Application",
+    description: "Rotten Apples is a book review web application using MongoDB, Express, React, Node. It consists of Login, Register, Home, Profile, Search/Results, Details pages.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ylwn29/rotten-apples-web-app",
+    previewUrl: "https://rotten-apples-react-web-app.netlify.app/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Command line chat bot",
+    description: "This is a React project that implements an image carousel component using react-slick and modern-screenshot libraries. You can either download individual page as a PNG file or all the pages as a PDF file.",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "AI"],
+    gitUrl: "",
+    previewUrl: "",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Image Carousel React Project",
+    description: "This is a React project that implements an image carousel component using react-slick and modern-screenshot libraries. You can either download individual page as a PNG file or all the pages as a PDF file.",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ylwn29/image_carousel",
+    previewUrl: "https://image-carousel-download.netlify.app/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Django ecommerce project",
+    description: "A simple django ecommerce that selling dog supplies, which implemented shopping cart feature with CRUD operations.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/ylwn29/django_project",
     previewUrl: "/",
   },
 ];
@@ -97,11 +97,11 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="AI"
+          isSelected={tag === "AI"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12  xl:px-16">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
