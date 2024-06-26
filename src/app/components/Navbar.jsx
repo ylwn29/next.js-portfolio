@@ -63,10 +63,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://www.linkedin.com/in/yulun-w/">
+          <Link href="https://www.linkedin.com/in/yulun-w/" target="_blank">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
-          <Link href="https://github.com/ylwn29">
+          <Link href="https://github.com/ylwn29" target="_blank">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
         </div>
