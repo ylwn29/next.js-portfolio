@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ylwn29/next.js-portfolio",
-    previewUrl: "https://yulunwang.netlify.app/",
+    previewUrl: "https://yulunwang.me/",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const projectsData = [
     image: "/images/projects/2.png",
     tag: ["All", "Web", "AI"],
     gitUrl: "https://github.com/ylwn29/color_palette_generator",
-    previewUrl: "/",
+    previewUrl: "/#projects",
   },
   {
     id: 3,
@@ -32,15 +32,6 @@ const projectsData = [
     gitUrl: "https://github.com/ylwn29/rotten-apples-web-app",
     previewUrl: "https://rotten-apples-react-web-app.netlify.app/",
   },
-  // {
-  //   id: 4,
-  //   title: "Command line chat bot",
-  //   description: "This is a React project that implements an image carousel component using react-slick and modern-screenshot libraries. You can either download individual page as a PNG file or all the pages as a PDF file.",
-  //   image: "/images/projects/4.png",
-  //   tag: ["All", "AI"],
-  //   gitUrl: "",
-  //   previewUrl: "",
-  // },
   {
     id: 4,
     title: "Image Carousel React Project",
@@ -57,7 +48,7 @@ const projectsData = [
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/ylwn29/django_project",
-    previewUrl: "/",
+    previewUrl: "/#projects",
   },
 ];
 
