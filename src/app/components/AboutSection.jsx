@@ -67,7 +67,7 @@ const AboutSection = () => {
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src="/images/bg3.jpg" width={650} height={650} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full transition-transform duration-300 hover:scale-110">
           <h2 className="text-4xl font-bold text-white mb-4 ">About Me</h2>
           <p className="text-lg lg:text-xl mb-4">
             I am a Master of Science in Computer Science student at Northeastern University. I have experience of Web Development, Cloud Computing, Object-Oriented Design. I am passionate about learning new technologies and am currently exploring the use of OpenAI APIs to deliver diverse functionalities.
@@ -75,7 +75,7 @@ const AboutSection = () => {
           <p className="text-lg lg:text-xl">
             Meanwhile, I am a team player and am eager to work with others to create innovative projects.
           </p>
-          <div className="flex flex-row justify-start mt-8 text-2xl gap-12">
+          <div className="flex flex-row justify-center mt-8 text-2xl gap-12 transition-transform duration-300 hover:scale-110">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
